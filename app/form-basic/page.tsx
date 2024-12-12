@@ -1,12 +1,14 @@
 "use client";
 
+import Container from "@/components/Container";
+
 export default function SimpleForm() {
   async function handleSubmit(formData: FormData) {
     const data = Object.fromEntries(formData.entries());
     console.log("Form Data Submitted:", data);
   }
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <Container>
       <form
         action={handleSubmit}
         className="w-full max-w-md bg-white shadow-md rounded-lg p-6 space-y-4"
@@ -41,6 +43,6 @@ export default function SimpleForm() {
           Submit
         </button>
       </form>
-    </div>
+    </Container>
   );
 }
