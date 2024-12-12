@@ -1,6 +1,6 @@
 "use client";
 
-import Container from "@/components/Container";
+import { Container } from "@/components/Container";
 import { SubmitButton } from "@/components/SubmitButton";
 
 export default function SimpleForm() {

@@ -1,6 +1,6 @@
 "use client";
 
-import Container from "@/components/Container";
+import { Container } from "@/components/Container";
 import { SubmitButton } from "@/components/SubmitButton";
 import { SubmittingButton } from "@/components/SubmittingButton";
 import { useActionState } from "react";
