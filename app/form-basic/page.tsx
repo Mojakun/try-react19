@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/components/Container";
+import { SubmitButton } from "@/components/SubmitButton";
 
 export default function SimpleForm() {
   async function handleSubmit(formData: FormData) {
@@ -36,12 +37,7 @@ export default function SimpleForm() {
             className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
           />
         </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 transition"
-        >
-          Submit
-        </button>
+        <SubmitButton />
       </form>
     </Container>
   );
