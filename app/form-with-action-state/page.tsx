@@ -6,15 +6,7 @@ import { SubmittingButton } from "@/components/SubmittingButton";
 import { useActionState } from "react";
 
 export default function FormWithActionState() {
-  async function handleSubmit(
-    state: { success: boolean } | null,
-    formData: FormData
-  ) {
-    const data = Object.fromEntries(formData.entries());
-
-    if (!data.name || !data.email) {
-      throw new Error("Both name and email are required.");
-    }
+  async function handleSubmit(): Promise<{ success: boolean }> {
     return new Promise<{ success: boolean }>((resolve) => {
       setTimeout(() => resolve({ success: true }), 2000);
     });
