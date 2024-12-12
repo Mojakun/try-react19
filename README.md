@@ -1,78 +1,49 @@
 # try-react19
 
-## Overview
-This project is a playground to explore and learn React 19 and Next.js 15. It is designed to try out new features of React Server Components and Next.js with the latest tools and configurations.
+## 概要
+`try-react19` は、**React 19** に新しく追加された `useActionState` と `<form>` の `action` 属性を試しながら、その挙動や活用方法を学ぶためのプレイグラウンドプロジェクトです。
 
-## Prerequisites
-- **Node.js**: v22.12.0 (Ensure you are using this version for compatibility)
-- **npm**: v9.6.4 or higher
-- **nodenv**: Used to manage Node.js versions (if applicable)
+主な目的は、フォームの非同期処理やバリデーションに関する React 19 の新機能を検証し、それらを使った実装方法を学ぶことです。
 
-## Setup
+---
 
-1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
-   cd try-react19
-   ```
+## このプロジェクトで試せること
+- **React 19 の新機能**
+  - `useActionState` を使用したフォームの状態管理と非同期処理。
+  - `<form>` の `action` 属性を活用した簡潔なデータ送信。
+- **フォームの設計と実装**
+  - フォーム送信時のバリデーションとエラー表示。
+  - 状態に応じた UI の更新（例: ペンディング中のボタン表示切り替え）。
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+---
 
-3. **Verify Node.js version:**
-   Ensure you are using Node.js v22.12.0.
-   ```bash
-   node -v
-   ```
-   If the version is incorrect, use the following command to switch:
-   ```bash
-   nodenv local 22.12.0
-   ```
+## ページ構成
+このプロジェクトには以下のサンプルページが含まれています。
 
-## Development
+1. **Home**
+   - プロジェクト全体の概要と各ページへのリンクを表示します。
+2. **Form Basic**
+   - シンプルなフォーム送信の実装例。
+3. **Form Validation**
+   - バリデーションとエラーメッセージを含むフォームの例。
+4. **Form with Action State**
+   - `useActionState` を活用した非同期フォーム送信と状態管理の例。
 
-1. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+---
 
-2. **Open in your browser:**
-   Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+## 技術スタック
+- **Next.js 15**
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS**
 
-## Build and Production
+---
 
-1. **Build the application:**
-   ```bash
-   npm run build
-   ```
+## 推奨環境
+- **Node.js**: v22.12.0
+- **npm**: v9.6.4 以上
+- **nodenv**: Node.js バージョン管理に使用。
 
-2. **Start the production server:**
-   ```bash
-   npm run start
-   ```
+---
 
-## Linting
-To check for linting issues, run:
-```bash
-npm run lint
-```
-
-## Key Features
-- **React 19**: Experiment with the latest React features, including Server Components.
-- **Next.js 15**: Leverage the App Router and Turbopack for modern web development.
-- **TypeScript**: Strict type checking for enhanced developer experience.
-- **ESLint**: Configured for Next.js best practices.
-
-## Notes
-- The `tsconfig.json` is configured with `target: ES2022` to utilize modern JavaScript features.
-- Ensure you have the correct Node.js version as specified above.
-
-## Future Plans
-- Experiment with React Server Components in more complex scenarios.
-- Add integration testing with modern tools like Playwright or Cypress.
-
-## License
-This project is for personal and educational purposes. Feel free to adapt or modify as needed.
-
+React 19 の新機能を学びながら、非同期処理やフォーム実装の理解を深めることができるプロジェクトです。ぜひ試してみてください！ 😊
